@@ -1,6 +1,7 @@
 loadEvents = () => {
   document.querySelector('form').addEventListener('submit', submit)
   document.getElementById('clear').addEventListener('click', clearTask)
+  document.querySelector('ul').addEventListener('click', deleteOrTick)
 }
 
 submit = e => {
@@ -25,6 +26,26 @@ addTask = task => {
 
 clearTask = () => {
   let ul = document.querySelector('ul').innerHTML = ''
+}
+
+deleteOrTick = e => {
+  // console.log(e.target)
+  if(e.target.className === 'delete'){
+    deleteTask(e)
+  } else {
+    tickTask(e)
+  }
+}
+
+deleteTask = e => {
+  console.log(e.target)
+  // debugger
+  const task = e.target.parentElement
+  task.remove()
+}
+
+tickTask =  e => {
+
 }
 
 loadEvents();
