@@ -45,7 +45,15 @@ deleteTask = e => {
 }
 
 tickTask =  e => {
-
+  // debugger
+  const task = e.target.nextElementSibling
+  if (e.target.checked) {
+    task.style.textDecoration = 'line-through'
+    task.style.color = '#9b9b9b'
+  } else {
+    task.style.textDecoration = 'none'
+    task.style.color = '#000'
+  }
 }
 
 loadEvents();
