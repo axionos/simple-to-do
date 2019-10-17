@@ -1,3 +1,38 @@
+html {
+  height: 100%;
+  font-family: sans-serif;
+  -webkit-background-size: auto;
+  background-size: auto;
+  background: linear-gradient(#ff6161,#ff768c), no-repeat;
+  color: #0f222d;
+}
+
+h1, form {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  width: 380px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+li {
+  padding: 15px 0;
+  font-size: 16px;
+}
+
+input {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .tasksBoard {
   display: none;
+}
+
+.clear {
+  text-align: right;
 }
