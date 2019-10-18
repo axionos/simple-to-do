@@ -3,36 +3,101 @@ html {
   font-family: sans-serif;
   -webkit-background-size: auto;
   background-size: auto;
-  background: linear-gradient(#ff6161,#ff768c), no-repeat;
-  color: #0f222d;
+  background: linear-gradient(#FEAC5E,#C779D0,#4BC0C8), no-repeat;
+  color: #fff;
 }
 
-h1, form {
+body {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
   text-align: center;
+}
+
+form {
+  background-color: #fff;
+  padding: 15px;
+}
+
+input[type='text']{
+  width: 310px;
+  height: 30px;
+  outline: 0;
+  border: none;
+  font-size: 1.5em;
+  background: #fff;
+  color: #2f4f4f;
+}
+
+button {
+  font-size: 1.5em;
+  color: #4BC0C8;
+  background-color: #fff;
+  outline: 0;
+  border: none;
+  width: 50px;
 }
 
 ul {
   list-style-type: none;
-  width: 380px;
-  border: 1px solid #000;
-  margin: 0 auto;
-  padding: 20px 20px;
 }
 
 li {
   padding: 15px 0;
-  font-size: 16px;
+  font-size: 1.3em;
+  color: #2f4f4f;
+  border-bottom: 1px solid #53BDFF;
 }
 
-input {
-  margin-left: 5px;
-  margin-right: 5px;
+.main {
+  width: 400px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
 }
 
 .tasksBoard {
   display: none;
+  background-color: #fff;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
 }
 
-.clear {
+.delete {
+  background-color: #FEAC5E;
+  padding: 0px 3px 0px 3px;
+  color: #fff;
+  cursor: pointer;
+}
+
+a {
+  float: right;
   text-align: right;
+  color: #C779D0;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .main{
+    margin: auto;
+    width: 100%;
+  }
+  input[type="text"]{
+    width: 80%;
+  }
+  button{
+    width: 10%;
+  }
 }
