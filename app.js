@@ -43,7 +43,6 @@ deleteTask = e => {
 }
 
 tickTask =  e => {
-  // debugger
   const task = e.target.nextElementSibling
   if (e.target.checked) {
     task.style.textDecoration = 'line-through'
