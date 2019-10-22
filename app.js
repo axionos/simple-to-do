@@ -29,7 +29,6 @@ clearTask = () => {
 }
 
 deleteOrTick = e => {
-  // console.log(e.target)
   if(e.target.className === 'delete'){
     deleteTask(e)
   } else {
