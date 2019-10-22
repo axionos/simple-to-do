@@ -38,7 +38,7 @@ deleteOrTick = e => {
 
 deleteTask = e => {
   console.log(e.target)
-  // debugger
+  
   const task = e.target.parentElement
   task.remove()
 }
