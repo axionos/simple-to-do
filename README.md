@@ -1,5 +1,7 @@
 # simple-to-do
 
+## Live demo
+https://to-do-list-simple.herokuapp.com/
+
 ## Demo
-Live Demo: https://to-do-list-simple.herokuapp.com/
 ![](simple-to-do.gif)
