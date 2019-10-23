@@ -11,8 +11,11 @@
     "url": "git+https://github.com/axionos/simple-to-do.git"
   },
   "keywords": [
-    "to-do-list"
+    "todo", "todolist"
   ],
+  "engines": {
+    "node": "11.13.0"
+  },
   "author": "Soyeong Oh",
   "license": "ISC",
   "bugs": {
